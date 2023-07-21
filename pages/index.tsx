@@ -20,7 +20,7 @@ export default function Index() {
 
     socket.on('connect', () => {
       console.log('connected------------');
-      socket.on('input-received', msg => {
+      socket.on('input-received', (msg: any) => {
         console.log('received------------',msg);
       })
     })

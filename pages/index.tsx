@@ -1,6 +1,6 @@
 import React,{ useEffect } from "react";
 import Image from "next/image";
-import { getAllAPI } from "../services/rest-services";
+// import { getAllAPI } from "../services/rest-services";
 import { Highlights } from "../components/highlights";
 import { Categories } from "../components/categories";
 import { GetServerSideProps } from "next";

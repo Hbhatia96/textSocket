@@ -11,7 +11,7 @@ let socket: any;
 export default function Index() {
 
   const socketInitializer = async () => {
-    socket = io('https://sxnvmp-3000.csb.app',{
+    socket = io('https://socket-olive.vercel.app',{
       path: '/api/socket',
       // extraHeaders: {
       //   "my-custom-header": "abcd"

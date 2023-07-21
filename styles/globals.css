@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 132px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 6.44%,
+    #ffffff 95.08%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 58px;
+  word-spacing: -31px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #008080;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001a1a;
+}
+
+.card {
+  box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+  border-radius: 8px;
+  max-width: 368px;
+  border-radius: 8px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+section {
+  overflow: hidden;
+}
+
+#menuCheckbox:checked + #menuIcon div:nth-child(1) {
+  transform: rotate(42deg);
+}
+#menuCheckbox:checked + #menuIcon div:nth-child(3) {
+  transform: rotate(-42deg);
+}
+#menuCheckbox:checked + #menuIcon div:nth-child(2) {
+  visibility: hidden;
+}
+
+#menuCheckbox:checked + #menuIcon + .menuBox {
+  transform: translateX(0);
+}
+
+.heroBanner {
+  background-size: cover;
+}
+
+.activityBanner {
+  height: calc(100vh - 80px);
+}
+@media only screen and (min-width: 641px) {
+  .heroBanner {
+    background-image: url("../public/Image.png");
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .heroBanner {
+    background-image: url("../public/mobile-image.png");
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 60px;
+    padding: 0 10px;
+    word-spacing: -12px;
+  }
+  .card {
+    max-width: 334px;
+  }
+}

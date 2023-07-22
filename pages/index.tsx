@@ -11,7 +11,8 @@ let socket: any;
 export default function Index() {
 
   const socketInitializer = async () => {
-    socket = io('wss://socket-olive.vercel.app',{
+    console.log('tt------------');
+    socket = io(window.location.href,{
       path: '/api/socket',
       // extraHeaders: {
       //   "my-custom-header": "abcd"

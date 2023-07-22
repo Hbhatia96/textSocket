@@ -9,7 +9,8 @@ const SocketHandler = (req, res) => {
     console.log('Socket is initializing')
     io = new Server(res.socket.server,{
       path: "/api/socket",
-      addTrailingSlash: false
+      addTrailingSlash: false,
+      origin: "*"
     })
     res.socket.server.io = io
   }

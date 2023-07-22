@@ -12,7 +12,7 @@ export default function Index() {
 
   const socketInitializer = async () => {
     console.log('tt------------');
-    socket = io(window.location.href,{
+    socket = io("https://test-socket.adaptable.app",{
       path: '/api/socket',
       // extraHeaders: {
       //   "my-custom-header": "abcd"
